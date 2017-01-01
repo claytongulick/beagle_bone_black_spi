@@ -42,10 +42,10 @@ So, with this utility all of the pins that aren't reserved for HDMI can be hot c
 ### Ok, so can we just make it work now please?
 So, finally after that long bit of history, here's how you actually set up and use SPI on a new beagle bone black wireless with a current image:
 
-C&#35;data out
+&#35; data out
 config-pin P.18 spi
 
-C&#35;clock out
+&#35; clock out
 config-pin P.22 spi
 
 Rinse, repeat if you need other pins like CS, or MISO.
