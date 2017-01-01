@@ -22,9 +22,10 @@ Well, that whole thing was pretty spiffy, but there were some drawbacks. One, it
 
 ### Cape Manager
 To address those issues: enter the Cape Manager. The cape manager is a pretty fancy piece of kernel module software that has the ability to dynamically load and swap out device tree overlays, and the tools live in userspace. When you see instructions on the web about adding lines to uEnv.txt like:
+
 optargs=quiet drm.debug=7 capemgr.enable_partno=BB-SPIDEV0
 
-This is telling the cape manager to load the SPI device tree overlay at boot time. Everywhere you look on the internet, this is the recommended solution for enabling SPI on 'current' devices. But, it doesn't work.
+What's going on is that this is telling the cape manager to load the SPI device tree overlay at boot time. It seems like everywhere you look on the internet, this is the recommended solution for enabling SPI on 'current' devices. But, it doesn't work.
 
 Why? Well, to explain that requires one more step.
 
