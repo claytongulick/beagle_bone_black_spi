@@ -43,6 +43,11 @@ So, with this utility all of the pins that aren't reserved for HDMI can be hot c
 ### Ok, so can we just make it work now please?
 So, finally after that long bit of history, here's how you actually set up and use SPI on a new beagle bone black wireless with a current image:
 
+First, yeah, you actually do need to do the above - edit /boot/uEnv.txt and add this line to the bottom:
+optargs=quiet drm.debug=7 capemgr.enable_partno=BB-SPIDEV0
+
+Then, proceed with all confidence to the following:
+
 &#35; data out
 
 config-pin P.18 spi
