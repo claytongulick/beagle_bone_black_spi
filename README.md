@@ -51,6 +51,12 @@ First, yeah, you actually do need to do the above - edit /boot/uEnv.txt and add 
 optargs=quiet drm.debug=7 capemgr.enable_partno=BB-SPIDEV0
 ```
 
+Unless, of course, you've update to the latest image and are enjoying the mystery of everything not working the same and a complete and total lack of documentation anywhere, in which case for "Stretch 9.2", you'll need to add this line instead:
+
+```
+cape_enable=bone_capemgr.enable_partno=BB-SPIDEV0
+```
+
 Then, proceed with all confidence to the following:
 
 ```
